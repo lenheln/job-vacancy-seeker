@@ -1,0 +1,19 @@
+senior
+architect
+consultant
+cloud
+lead
+german
+devops
+devsecops
+principal
+teamhead
+node.js
+web developer
+projektleiter
+werkstudent
+trainee
+intern
+php
+frontend
+typescript

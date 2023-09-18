@@ -1,0 +1,22 @@
+stopNamesFile: "stopNames.txt"
+stopWordsFile: "stopWords.txt"
+
+linkedinStartPage: "https://www.linkedin.com/jobs/search/"
+linkedinListPage: "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search/"
+linkedinFilters: "?distance=25&f_TPR=r86400&geoId=101282230&keywords=java+developer"
+
+mail:
+  smtp:
+    auth: true
+    host: smtp.gmail.com
+    port: 587
+    starttls:
+      enable: true
+  from: "job-seeking-app@gmail.com"
+  to: "hostelsdirector@gmail.com"
+  title: "New jobs"
+
+variables:
+  email:
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
