@@ -18,5 +18,9 @@ mail:
 
 variables:
   email:
-    username: ${EMAIL_USERNAME}
-    password: ${EMAIL_PASSWORD}
+    username: ${sm://EMAIL_USERNAME}
+    password: ${sm://EMAIL_PASSWORD}
+
+cloud:
+  gcp:
+    project-id: just-plate-393810

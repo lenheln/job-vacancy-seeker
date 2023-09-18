@@ -22,5 +22,5 @@ public class Controller {
     public void start() throws MessagingException, IOException {
         scheduledImport.doImport();
     }
-    
+
 }
