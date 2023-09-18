@@ -1,3 +1,4 @@
+//todo why tests are not run
 //package com.e_koslowa.jobvacancyseeker;
 //
 //import com.e_koslowa.jobvacancyseeker.emailsender.EmailSender;
