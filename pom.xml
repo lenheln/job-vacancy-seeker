@@ -12,6 +12,7 @@
 	<artifactId>job-vacancy-seeker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>job-vacancy-seeker</name>
+	<packaging>jar</packaging>
 	<description>Service for job vacancy seeking automation </description>
 	<properties>
 		<java.version>17</java.version>
