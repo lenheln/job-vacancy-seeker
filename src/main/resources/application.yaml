@@ -5,16 +5,20 @@ linkedinStartPage: "https://www.linkedin.com/jobs/search/"
 linkedinListPage: "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search/"
 linkedinFilters: "?distance=25&f_TPR=r86400&geoId=101282230&keywords=java+developer"
 
-spring:
-  config:
-    import: sm://
+#spring:
+#  config:
+#    import: sm://
 #  cloud:
 #    gcp:
 #      project-id: just-plate-393810
 #      secretmanager:
 #        enabled: true
 #        project-id: just-plate-393810
-
+spring:
+  cloud:
+    gcp:
+      secretmanager:
+        enabled:true
 mail:
   smtp:
     auth: true
@@ -30,7 +34,7 @@ variables:
   email:
     username: ${sm://projects/just-plate-393810/secrets/EMAIL_USERNAME}
     password: ${sm://projects/just-plate-393810/secrets/EMAIL_PASSWORD}
-
+#
 #variables:
 #  email:
 #    username: ${EMAIL_USERNAME}
