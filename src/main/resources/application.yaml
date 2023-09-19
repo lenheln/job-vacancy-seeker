@@ -7,13 +7,13 @@ linkedinFilters: "?distance=25&f_TPR=r86400&geoId=101282230&keywords=java+develo
 
 spring:
   config:
-    import: "sm://"
-  cloud:
-    gcp:
-      project-id: "just-plate-393810"
-      secretmanager:
-        enabled: true
-        project-id: "just-plate-393810"
+    import: sm://
+#  cloud:
+#    gcp:
+#      project-id: just-plate-393810
+#      secretmanager:
+#        enabled: true
+#        project-id: just-plate-393810
 
 mail:
   smtp:
