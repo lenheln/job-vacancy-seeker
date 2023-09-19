@@ -18,7 +18,7 @@ spring:
   cloud:
     gcp:
       secretmanager:
-        enabled:true
+        enabled: true
 mail:
   smtp:
     auth: true
