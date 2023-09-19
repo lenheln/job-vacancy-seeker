@@ -39,11 +39,11 @@ public class YamlConfig {
     private String emailTitle;
 
 //    @Value("${sm://EMAIL_USERNAME}")
-    @Value("variables.email.username}")
+    @Value("${variables.email.username}")
     private String emailUsername;
-    
+
 //    @Value("${sm://EMAIL_PASSWORD}")
-    @Value("variables.email.password}")
+    @Value("${variables.email.password}")
     private String emailPassword;
 
     /* getters and setters */
