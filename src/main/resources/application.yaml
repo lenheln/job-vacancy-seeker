@@ -31,4 +31,3 @@ variables:
     username: ${sm://EMAIL_USERNAME}
     password: ${sm://EMAIL_PASSWORD}
 
-
