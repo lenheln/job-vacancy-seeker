@@ -7,7 +7,7 @@ linkedinFilters: "?distance=25&f_TPR=r86400&geoId=101282230&keywords=java+develo
 
 spring:
   config:
-    import: "sm://"
+    import: sm://
 #  cloud:
 #    gcp:
 #      project-id: just-plate-393810
