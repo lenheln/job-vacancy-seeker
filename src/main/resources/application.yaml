@@ -32,11 +32,9 @@ mail:
 
 variables:
   email:
-    username: ${sm://projects/just-plate-393810/secrets/EMAIL_USERNAME}
-    password: ${sm://projects/just-plate-393810/secrets/EMAIL_PASSWORD}
-#
-#variables:
-#  email:
-#    username: ${EMAIL_USERNAME}
-#    password: ${EMAIL_PASSWORD}
+#    username: ${sm://projects/just-plate-393810/secrets/EMAIL_USERNAME}
+#    password: ${sm://projects/just-plate-393810/secrets/EMAIL_PASSWORD}
+    username: ${sm://EMAIL_USERNAME}
+    password: ${sm://EMAIL_PASSWORD}
+
 
