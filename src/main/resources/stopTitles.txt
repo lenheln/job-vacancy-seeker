@@ -1,0 +1,66 @@
+senior
+architect
+consultant
+cloud
+lead
+german
+devops
+devsecops
+principal
+teamhead
+node.js
+web developer
+projektleiter
+werkstudent
+trainee
+intern
+php
+typescript
+full stack
+entwickler
+softwareentwickler
+fullstack
+full-stack
+front end
+front-end
+frontend
+data scientist
+data analytics
+programador
+qa engineer
+bigquery
+python
+solidity
+machine learning
+salesforce
+angular
+security
+django
+security
+data engineer
+.net
+staff
+c++
+database developer
+oracle developer
+android
+ios
+hana
+sr.
+c#
+requirements
+system
+systems
+sap developer
+datacenter
+microsoft
+business
+analytics
+architekt
+ausbildung
+middleware
+quality
+student
+test
+application
+

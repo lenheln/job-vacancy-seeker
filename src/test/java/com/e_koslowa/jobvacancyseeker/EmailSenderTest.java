@@ -1,7 +1,8 @@
-//todo why tests are not run
 //package com.e_koslowa.jobvacancyseeker;
 //
+//import com.e_koslowa.jobvacancyseeker.config.FilesConfig;
 //import com.e_koslowa.jobvacancyseeker.emailsender.EmailSender;
+//import com.e_koslowa.jobvacancyseeker.entity.Job;
 //import jakarta.mail.MessagingException;
 //import org.junit.jupiter.api.Assertions;
 //import org.junit.jupiter.api.Test;
@@ -19,21 +20,21 @@
 //    EmailSender sender;
 //
 //    @Autowired
-//    YamlConfig config;
+//    FilesConfig config;
 //
 //    @Test
 //    void createEmail() throws MessagingException {
 //
-//        JobVacancy job1 = new JobVacancy("Senior Java Developer",
-//                "Google",
+//        Job job1 = new Job("Senior Java Developer",
+//                "Google", "1-10", "Germany",
 //                "'<p>Join Our Client’s Team: <u>Database and Software Engineer for NATO Project</u></p><p><br></p><p>We are looking for an exceptional Database and Software Engineer to our client’s team for a high-impact project in collaboration with NATO.</p>",
 //                "http://google.com");
-//        JobVacancy job2 = new JobVacancy("Junior Java Developer",
-//                "Docker",
+//        Job job2 = new Job("Junior Java Developer",
+//                "Docker", "1-10", "Germany",
 //                "<p>Als Full-Stack Developer bist Du die treibende Kraft bei der Weiterentwicklung unserer Plattform.</p><p><br></p><p><strong>Deine Aufgaben umfassen im Detail:</strong></p>",
 //                "http://docker.com");
 //
-//        List<JobVacancy> jobs = new LinkedList<>(Arrays.asList(job1,job2));
+//        List<Job> jobs = new LinkedList<>(Arrays.asList(job1,job2));
 //        List<String> errors = new LinkedList<>(Arrays.asList("http://error1.com","http://error2.com"));
 //
 //        String expectedEmail = "<html>\n" +

@@ -1,17 +1,31 @@
-stopNamesFile: "stopNames.txt"
-stopWordsFile: "stopWords.txt"
+stopTitles: "stopTitles.txt"
+stopDescriptions: "stopDescriptions.txt"
+stopLocations: "stopLocations.txt"
+stopEmployees: "stopEmployees.txt"
 
-linkedinStartPage: "https://www.linkedin.com/jobs/search/"
-linkedinListPage: "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search/"
-linkedinFilters: "?distance=25&f_TPR=r86400&geoId=101282230&keywords=java+developer"
+linkedin:
+  startPage: "https://www.linkedin.com/jobs/search/"
+  listPage: "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search/"
+  loginPage: "https://www.linkedin.com/login"
+  jobSearchPage: "https://www.linkedin.com/jobs/search"
+  default:
+    location: "Germany"
+    keywords: "java,developer"
+    postedSecAgo: 86400
+    remote: false
+    lang: "EN"
+  credentials:
+    username: "lenhelncode@gmail.com"
+    password: "l1e2n3a4"
+#    убрать все в переменные
 
-spring:
-  config:
-    import: sm://
-  cloud:
-    gcp:
-      secretmanager:
-        enabled: true
+#spring:
+#  config:
+#    import: sm://
+#  cloud:
+#    gcp:
+#      secretmanager:
+#        enabled: true
 #  cloud:
 #    gcp:
 #      project-id: just-plate-393810
@@ -34,7 +48,7 @@ variables:
   email:
 #    username: ${sm://projects/just-plate-393810/secrets/EMAIL_USERNAME}
 #    password: ${sm://projects/just-plate-393810/secrets/EMAIL_PASSWORD}
-    username: ${sm://EMAIL_USERNAME}
-    password: ${sm://EMAIL_PASSWORD}
+    username: "hostelsdirector@gmail.com"
+    password: "cqlikzviegxzpzvz"
 
 

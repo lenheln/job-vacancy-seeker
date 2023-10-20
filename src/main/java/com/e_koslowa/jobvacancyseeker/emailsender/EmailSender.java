@@ -1,7 +1,7 @@
 package com.e_koslowa.jobvacancyseeker.emailsender;
 
-import com.e_koslowa.jobvacancyseeker.JobVacancy;
-import com.e_koslowa.jobvacancyseeker.YamlConfig;
+import com.e_koslowa.jobvacancyseeker.config.MailConfig;
+import com.e_koslowa.jobvacancyseeker.entity.Job;
 import jakarta.mail.*;
 import jakarta.mail.internet.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +19,9 @@ public class EmailSender {
     private static final Logger log = Logger.getLogger(EmailSender.class.getName());
 
     @Autowired
-    private YamlConfig config;
+    private MailConfig config;
 
-    public void sendEmail(List<JobVacancy> jobs, List<String> errors) throws MessagingException {
+    public void sendEmail(List<Job> jobs) throws MessagingException {
 
         Properties prop = new Properties();
         prop.put("mail.smtp.auth", config.isSmtpAuth());
@@ -42,7 +42,7 @@ public class EmailSender {
                 Message.RecipientType.TO, InternetAddress.parse(config.getEmailTo()));
         message.setSubject(config.getEmailTitle());
 
-        String body = createEmail(jobs, errors);
+        String body = createEmail(jobs);
 
         MimeBodyPart mimeBodyPart = new MimeBodyPart();
         mimeBodyPart.setContent(body, "text/plain; charset=utf-8");
@@ -54,12 +54,7 @@ public class EmailSender {
         Transport.send(message);
     }
 
-    public String createEmail(List<JobVacancy> jobs, List<String> errors) {
-
-        String body = jobs.stream().map(Object::toString).collect(Collectors.joining("\n ---- \n"));
-        body = body.concat("Errors \n");
-        body += errors.stream().map(Objects::toString).collect(Collectors.joining("\n"));
-
-        return body;
+    public String createEmail(List<Job> jobs) {
+        return jobs.stream().map(Object::toString).collect(Collectors.joining("\n ---- \n"));
     }
 }
