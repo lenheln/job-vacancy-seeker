@@ -8,9 +8,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -33,6 +35,7 @@ public class LinkedinController {
                       @RequestParam(required = false) String lang) {
 
         ExecutorService es = Executors.newFixedThreadPool(10);
+
         es.execute(() ->
         {
             try {

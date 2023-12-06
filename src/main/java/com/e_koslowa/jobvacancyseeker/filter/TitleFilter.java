@@ -17,6 +17,7 @@ public class TitleFilter implements Predicate<Job> {
 
     @Override
     public boolean test(Job job) {
+
         return filter.test(job.getTitle(), config.getStopTitles());
     }
 }

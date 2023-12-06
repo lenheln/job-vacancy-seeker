@@ -52,3 +52,5 @@ variables:
     password: "cqlikzviegxzpzvz"
 
 
+server:
+  port : 8081

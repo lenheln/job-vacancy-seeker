@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 @Component
 public class LinkedinFilter extends AbstractFilter{
 
+    //TODO decorator???
+
     @Autowired
     private TitleFilter titleFilter;
     @Autowired
@@ -24,8 +26,8 @@ public class LinkedinFilter extends AbstractFilter{
 
         return jobs.stream()
                 .filter(titleFilter)
-                .filter(locationFilter)
-                .filter(employeeFilter)
+//                .filter(locationFilter)
+//                .filter(employeeFilter)
                 .filter(descriptionFilter)
                 .collect(Collectors.toList());
     }
